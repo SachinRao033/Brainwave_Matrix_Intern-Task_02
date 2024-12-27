@@ -8,7 +8,8 @@ Step 1:- Launch a New VM Instance (“Compute Engine”- Google Cloud).
 Log in to Google Cloud Console, navigate to Compute Engine, and create a new VM instance, and Security Traffic & Cloud Key is taken default.
 This instance will serve as your server.
 
-![Create VM Instance on Google Cloud-Image](file:///C:/Users/sanju%20gaikwad/OneDrive/Pictures/Screenshots/Screenshot%202024-12-25%20124126.png)
+![Create VM Instance on Google Cloud-Image](https://github.com/user-attachments/assets/8ea239db-0327-4b45-814d-c7686252fcc8)
+
 
 Step 2:- Connect via SSH & Gain Root Access & Update Package Lists.
 Use the SSH option in the Google Cloud Console to access your instance securely. This provides a command-line interface.
