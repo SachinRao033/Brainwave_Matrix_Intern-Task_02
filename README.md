@@ -1,13 +1,13 @@
-DEPLOY-SIMPLE-STATIC-WEBSITE-ON-GOOGLE-CLOUD-PLATFROM-BY-USING-STORAGE-BUCKET.
+DEPLOY-SIMPLE-STATIC-WEBSITE-ON-GOOGLE-CLOUD-PLATFROM(GCP)-BY-USING-STORAGE_BUCKET.
 
-TASK 2 :- 
-https://drive.google.com/file/d/1kfbO1cISb63TnjV0ivw7qdAxoaC1XOzK/view?usp=drive_link
+"TASK 2(Video Link):- https://drive.google.com/file/d/1kfbO1cISb63TnjV0ivw7qdAxoaC1XOzK/view?usp=drive_link"
 
-SIMPLE STATIC WEBSITE AND DEPLOYING IT TO GOOGLE CLOUD.
+Deploy a Simple Static Website on GCP by using Cloud Stoarge Bucket.
 
 Step 1:- Launch a New VM Instance (“Compute Engine”- Google Cloud).
 Log in to Google Cloud Console, navigate to Compute Engine, and create a new VM instance, and Security Traffic & Cloud Key is taken default.
 This instance will serve as your server.
+
 
 
 Step 2:- Connect via SSH & Gain Root Access & Update Package Lists.
