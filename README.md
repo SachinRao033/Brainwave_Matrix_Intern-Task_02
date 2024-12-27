@@ -6,8 +6,12 @@ Deploy a Simple Static Website on GCP by using Cloud Stoarge Bucket.
 
 Step 1:- Launch a New VM Instance (“Compute Engine”- Google Cloud).
 
-• Log in to Google Cloud Console, navigate to Compute Engine, and create a new VM instance, and Security Traffic & Cloud Key is taken default.  
-• This instance will serve as your server.  
+• Log in to the Google Cloud Console.   
+• Navigate to Compute Engine → VM instances.   
+• Click Create Instance.   
+   --Set the instance name and specifications as needed.  
+   --Keep Firewall rules as default for now.  
+• Click Create to launch your instance.   
   
 ![Create VM Instance on Google Cloud-Image](https://github.com/user-attachments/assets/f5b00ef1-fa92-4ed9-8676-782b1eab06e4)
    
@@ -35,13 +39,20 @@ Step 3:- Install Apache2 & Check Apache Status.
 ![Apache2 Status-Image](https://github.com/user-attachments/assets/48d627f9-270d-44f2-b06c-9e6b1d597fbd)
   
 
-Step 4:-Create a Storage Bucket & Upload Files to the Bucket.   
-  
-• Navigate to the Cloud Storage page.  
+Step 4:-Create a Cloud Storage Bucket & Upload Files to the Bucket.   
+
+• Go to the Cloud Storage section in the console.  
 • Click Create Bucket.  
-• Set the Bucket name (must be globally unique).  
-• Choose the Storage class and Location based on your needs.  
-• Configure permissions (e.g., allow public or private access) & Click Create.   
+• Configure the bucket:  
+    --Name: Provide a globally unique name.  
+    --Storage Class: Select the appropriate class (e.g., Standard).  
+    --Location: Choose the desired location.  
+    --Set permissions (e.g., public or private access).  
+• Click Create.  
+• Upload your static website files:  
+    --Go to the bucket.  
+    --Click Upload Files or Upload Folder.  
+    --Select your local files and upload.   
   
 ![Bucket Created-Image](https://github.com/user-attachments/assets/4e476f4c-a7e9-4a3f-aa31-9eddadd07c31)
   
@@ -65,8 +76,9 @@ Step 5:-Copy File from Cloud Storage to VM Instance.
 
 Step 5:- OUTPUT - Deploy Static Web Application.   
   
-• Copy the public IP address of your VM, open a browser, and navigate to it.     
-• Your application should now be running.  
+• Copy the external/public IP address of your VM instance.  
+• Open a web browser and paste the IP address in the URL bar.  
+• Your static website should now be live.  
    
 
 ![Copied Public IP-Image](https://github.com/user-attachments/assets/e6945777-8ba2-413b-9671-6621566d024c)
@@ -88,6 +100,9 @@ Step 5:- OUTPUT - Deploy Static Web Application.
    
 
 ![Output-Image](https://github.com/user-attachments/assets/3230c715-cc81-425a-b513-917bbb467b12)
-  
 
-Concusion:  
+  
+### Conclusion:
+
+In this task, we successfully deployed a static website on Google Cloud using a virtual machine (VM) instance and Apache server. We began by creating a VM instance, then connected to it via SSH to gain root access and install Apache. After setting up the Apache server, we created a Cloud Storage bucket, uploaded our website files, and transferred them to the VM using the `gsutil` command. Finally, by accessing the VM's public IP, we verified that the static website was live and accessible from the web. This process provided hands-on experience with key cloud computing services such as Compute Engine and Cloud Storage, as well as deploying a basic static website in a cloud environment.    
+  
